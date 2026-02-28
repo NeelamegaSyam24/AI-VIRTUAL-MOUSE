@@ -43,3 +43,24 @@ It allows users to control their computer using hand gestures through a webcam �
 ---
 
 ## 📂 Project Structure
+
+```
+AI_VIRTUAL_MOUSE/
+│
+├── main.py        # Gesture Engine
+├── splash.py      # Startup Splash Screen
+├── icon.ico       # Custom Application Icon
+├── version.txt    # Version Metadata (if used)
+├── README.md
+```
+
+---
+
+## ⚙ Installation (Run from Source)
+
+```bash
+pip install opencv-python mediapipe pyautogui numpy
+python main.py
+pyinstaller --onefile --windowed --icon=icon.ico --name "AI_Gesture_OS" --version-file=version.txt --collect-all mediapipe --collect-all cv2 --collect-all numpy main.py
+
+---
